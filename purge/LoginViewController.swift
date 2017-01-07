@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
     
     func loginButtonTapped() {
         let clientId = "02123bc881bb489c9ab2a2396fe15e4a"
-        let redirectUri = "http://www.miltonandparc.com"
+        let redirectUri = "http://www.miltonandparc.com/oauth-redirect/"
         let urlString = "https://api.instagram.com/oauth/authorize/?client_id=\(clientId)&redirect_uri=\(redirectUri)&response_type=code"
         guard let url = URL(string: urlString) else { return }
         let safariVc = SFSafariViewController(url: url)
